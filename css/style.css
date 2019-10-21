@@ -1,1 +1,97 @@
+body {
+	padding: 1rem .5rem;
+	font-size: 1.3rem;
+	line-height: 1.2;
+	max-width: 60rem;
+	margin: 0 auto;
+	background-color:darkgray;
+  list-style-type: none;
+}
+@media screen and (min-width:30em) {
+  body{
+    max-width:95%;
+  }
+}
 
+@media screen and (min-width:30em) {
+  header{
+    display: table;
+  }
+}
+
+img {
+	max-width: 100%;
+}
+
+@media screen and (min-width:30em) {
+  img{
+    display:table-cell;
+
+  }
+}
+
+.EntryTable
+{
+  display: list-item;
+    background-color: #abcdef;
+    padding: 10px;
+}
+
+.Entry
+{
+  display: list-item;
+
+}
+
+.EntryName
+{
+  display: list-item;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.EntryDate
+{
+  display: list-item;
+  font-size: .99rem;
+  font-style: italic;
+}
+
+.EntryDescription
+{
+  display: list-item;
+  font-size:.9rem;
+}
+
+.EntryTitle
+{
+  display: list-item;
+  margin-top: 2em;
+  background-color: #bcdefa;
+  font-size:1.8rem;
+  font-weight: bolder;
+}
+
+.Resume
+{
+  float: none;
+  clear:both;
+
+  background-color: #9aabcd;
+}
+
+.LogoWrapper
+{
+  display: table-cell;
+  max-width: 100%;
+}
+
+@media screen and (min-width:30em) {
+  .LogoWrapper{
+    display:table-cell;
+    float:left;
+    max-width: 25%;
+    margin: 1em;
+  }
+}
