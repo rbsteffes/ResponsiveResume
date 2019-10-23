@@ -7,91 +7,214 @@ body {
 	background-color:darkgray;
   list-style-type: none;
 }
-@media screen and (min-width:30em) {
+
+@media screen and (min-width:60em) {
+	body{
+
+		background-color: lightgray;
+  }
+}
+
+@media screen and (min-width:50em) {
   body{
     max-width:95%;
   }
 }
 
-@media screen and (min-width:30em) {
+@media screen and (min-width:50em) {
   header{
     display: table;
+		background-color: #abcdef;
+		width:100%;
   }
 }
+
+
+@media screen and (min-width:60em) {
+	header{
+    display: flex;
+		flex-wrap:wrap;
+		background-color: #550000;
+		width:100%;
+  }
+}
+
+
+.LogoWrapper
+{
+	height: 200px;
+	background-image: url('../images/RyanSteffesPhotographer_small.jpg');
+	background-repeat: no-repeat;
+  background-position: center;
+	background-size:cover;
+
+}
+
+@media screen and (min-width:50em) {
+  .LogoWrapper{
+    height:200px;
+		width:25%;
+		background-image: url('../images/RyanSteffesPhotographer.jpg');
+		max-width: 30%;
+    margin: 1em;
+		display: table-cell;
+  }
+}
+
+@media screen and (min-width:60em) {
+  .LogoWrapper{
+		float:left;
+		background-image: url('../images/RyanSteffesPhotographer.jpg');
+		height:30vh;
+		margin:2vh;
+		display: auto;
+  }
+}
+
+
+@media screen and (min-width:50em) {
+	.PesonalInformation{
+			display: table-cell;
+	}
+}
+
+@media screen and (min-width:60em) {
+	.PesonalInformation{
+			display: auto;
+	}
+}
+
 
 img {
-	max-width: 100%;
-}
-
-@media screen and (min-width:30em) {
-  img{
-    display:table-cell;
-
-  }
+	max-height: 250px;
 }
 
 .EntryTable
 {
-  display: list-item;
+  	display: table;
     background-color: #abcdef;
-    padding: 10px;
+    margin: 10px;
+		width:95%;
+}
+
+@media screen and (min-width:60em) {
+	.EntryTable
+	{
+	  	display: flex;
+			flex-wrap:wrap;
+	    background-color: #abcdef;
+	    margin: 10px;
+			max-width:95%;
+	}
+	.EntryTable>*
+	{
+		flex:1 1 33vw;
+	}
 }
 
 .Entry
 {
   display: list-item;
-
+	padding: 10px;
 }
+
+@media screen and (min-width:60em) {
+	.Entry
+	{
+	  display: auto;
+		padding: 10px;
+	}
+}
+
+
 
 .EntryName
 {
-  display: list-item;
+  display: table-cell;
   font-size: 1.3rem;
   font-weight: bold;
   margin-top: 10px;
+	text-align: justify;
+}
+
+@media screen and (min-width:60em) {
+	.EntryName
+	{
+	  display: auto;
+	  font-size: 1.3rem;
+	  font-weight: bold;
+	  margin-top: 10px;
+	}
 }
 
 .EntryDate
 {
-  display: list-item;
+  display: table-cell;
+	width:15rem;
   font-size: .99rem;
-  font-style: italic;
+  font-style:oblique;
+	text-align: right;
+}
+
+@media screen and (min-width:60em) {
+	.EntryDate
+	{
+	  display: auto;
+		text-align: center;
+	}
 }
 
 .EntryDescription
 {
-  display: list-item;
-  font-size:.9rem;
+	display: list-item;
+	width: 90%;
+	font-size:.9rem;
+	padding-left: 10%;
+	padding-right: 10%;
+			text-align: justify;
+}
+
+@media screen and (min-width:60em) {
+	.EntryDescription
+	{
+	  display: auto;
+	}
 }
 
 .EntryTitle
 {
-  display: list-item;
-  margin-top: 2em;
-  background-color: #bcdefa;
-  font-size:1.8rem;
-  font-weight: bolder;
+	display: list-item;
+	margin-top: 2em;
+	background-color: #bcdefa;
+	font-size:1.8rem;
+	font-weight: bolder;
+}
+
+@media screen and (min-width:60em) {
+	.EntryTitle
+	{
+	  display:auto;
+		flex-basis: 100%;
+		text-align: center;
+	}
 }
 
 .Resume
 {
-  float: none;
+  display: relative;
   clear:both;
-
   background-color: #9aabcd;
 }
 
-.LogoWrapper
-{
-  display: table-cell;
-  max-width: 100%;
-}
+@media screen and (min-width:60em) {
+.Resume
+	{
+	  display: flex;
+		flex-wrap: wrap;
 
-@media screen and (min-width:30em) {
-  .LogoWrapper{
-    display:table-cell;
-    float:left;
-    max-width: 25%;
-    margin: 1em;
-  }
+	}
+	.Resume>*
+	{
+		flex:1 1 500px;
+	}
 }
