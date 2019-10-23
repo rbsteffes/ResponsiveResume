@@ -81,9 +81,29 @@ body {
 @media screen and (min-width:60em) {
 	.PesonalInformation{
 			display: auto;
+			align-items: center;
 	}
 }
 
+.Resume
+{
+  display: relative;
+  clear:both;
+  background-color: #9aabcd;
+}
+
+@media screen and (min-width:60em) {
+.Resume
+	{
+	  display: flex;
+		flex-wrap: wrap;
+
+	}
+	.Resume>*
+	{
+		flex:1 1 500px;
+	}
+}
 
 img {
 	max-height: 250px;
@@ -104,11 +124,13 @@ img {
 			flex-wrap:wrap;
 	    background-color: #abcdef;
 	    margin: 10px;
-			max-width:95%;
+			max-width:100%;
+			justify-content: center;
+
 	}
 	.EntryTable>*
 	{
-		flex:1 1 33vw;
+		flex:1 1 25vw;
 	}
 }
 
@@ -122,7 +144,7 @@ img {
 	.Entry
 	{
 	  display: auto;
-		padding: 10px;
+
 	}
 }
 
@@ -161,17 +183,19 @@ img {
 	{
 	  display: auto;
 		text-align: center;
+		flex-basis:20rem;
 	}
 }
 
 .EntryDescription
 {
 	display: list-item;
-	width: 90%;
+	width: 99%;
+	overflow-x: hidden;
+	overflow: visible;
 	font-size:.9rem;
-	padding-left: 10%;
-	padding-right: 10%;
-			text-align: justify;
+	margin-left: 10px;
+	text-align: justify;
 }
 
 @media screen and (min-width:60em) {
@@ -199,22 +223,8 @@ img {
 	}
 }
 
-.Resume
-{
-  display: relative;
-  clear:both;
-  background-color: #9aabcd;
-}
-
 @media screen and (min-width:60em) {
-.Resume
-	{
-	  display: flex;
-		flex-wrap: wrap;
-
-	}
-	.Resume>*
-	{
-		flex:1 1 500px;
+	.Experience{
+		flex-basis: 100%;
 	}
 }
