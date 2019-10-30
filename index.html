@@ -6,32 +6,36 @@
 		<meta name="description" content="A basic responsive Resume - Ryan Steffes, User Interface Designer">
 
 		<link rel="stylesheet" href="css/style.css">
+
 	</head>
 	<body>
 
-    <div class="Header">
-			<div class="LogoWrapper">&nbsp;</div>
-			<div class="PesonalInformation ">
-				<div class="EntryTable">
-					<div class="EnryTitle">Ryan Steffes, Software Engineer, System Designer, and Photographer</div>
+  <header>
+			<div class="LogoWrapper" alt-text="Ryan Steffes Photographer">&nbsp;</div>
+			<section class="PesonalInformation">
+				<section>
+					<div class="EntryTitle">Ryan Steffes, Software Engineer, System Designer, and Photographer</div>
 					<div class="Entry">
 				  	<div class="EntryDescription">I am proud to have come from a home that emphasized traditional values and that strongly esteemed work ethic, integrity and intellectual rigor. I take great pleasure in the translation of practical experience into the transmission of knowledge.  I am looking for employment that will allow me to work with a team, challenge me daily and allow me to join others in making a difference.</div>
 					</div>
 					<div class="Entry">
 							<div class="EntryTitle">Contact</div>
-							<div class="EntryDescription">
-								    <li>PHONE:</li>
-								    <li class="PhoneNumber">919-624-4098</li>
-										<li>EMAIL:</li>
-								    <li>R.B.STEFFES@gmail.com</li>
+							<details>
+								    <summary>Phone Available:</summary>
+								    <p class="PhoneNumber">919-624-4098</p>
+							</details>
+							<details>
+										<summary>Email Available:</summary>
+								    <p>R.B.STEFFES@gmail.com</p>
+									</details>
 				  	</div>
 					</div>
-			  </div>
-			</div>
-		</div>
+			</section>
+		</section>
+	</header>
 
-<div class="Resume">
-  <div class="Skills EntryTable">
+<main>
+  <section class="Skills">
     <div class="EntryTitle">Software Languages and Skills:</div>
 		<div class="Entry">
 			<div class="EntryName">Programming Languages</div>
@@ -47,18 +51,20 @@
     	<div class="EntryDescription">Can translate complex technical solutions from “geek” to end-user</div>
     	<div class="EntryDescription">Can break down complex concepts into teachable units</div>
 		</div>
-	</div>
+	</section>
 
-	 <div class="Education EntryTable">
-		 <div class="EntryTitle">Education</div>
-		<div class="Entry">
-			<div class="EntryName">Taylor University Upland, Indiana</div>
-			<div class="EntryDate">2001</div>
-			<div class="EntryDescription">Bachelor of Science(Majored in Computer Science and Business Information Systems)</div>
-		</div>
-	</div>
+	<section class="Education">
+		<div class="EntryTitle">Education</div>
+			 <details>
+				 	<summary class="EntryName">Bachelor of Science</summary>
+					<p>Computer Science and Business Information Systems</p>
+				</details>
+		 <div class="EntryDate">2001</div>
+		 <div class="EntryDescription">Taylor University Upland, Indiana</div>
 
-	<div class="Experience EntryTable">
+ </section>
+
+	<section class="Experience">
       <div class="EntryTitle">TEACHING</div>
 			<div class="Entry">
 	      <div class="EntryName">Measurement, Inc (Durham, NC) - Reader, Scorer, Temporary HR</div>
@@ -144,14 +150,14 @@
 		      Converted C Code to C++ for naval radar system
 				</div>
     </div>
-	 <div class="Hobbies EntryTable">
-	    <div class="Entry">
+	</section>
+	 <section class="Hobbies">
 				<div class="EntryTitle">Hobbies and Special Skills</div>
 
 				<div class="EntryName">Photography</div>
 	    	<div class="EntryName">Fruit and vegetable gardening</div>
 	    	<div class="EntryName">Exercise (Certified Personal Trainer)</div>
-			</div>
-  	</div>
+	</section>
+	</main>
   </body>
 </html>

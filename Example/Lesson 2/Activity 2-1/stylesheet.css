@@ -1,6 +1,20 @@
 body{
   margin: 20px 50px;
+  background-color: grey;
 }
 p{
   margin: 10px;
 }
+
+@media screen and (min-width:768px) {
+  body{
+    background-color: orange;
+    margin: 10%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  p{
+    font-size: 1.1em;
+  }
+  }

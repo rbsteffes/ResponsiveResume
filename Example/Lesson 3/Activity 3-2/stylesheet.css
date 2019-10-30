@@ -12,30 +12,37 @@ body {
   height: 130px;
   background-color: #038C5A;
 }
-.WrapMiddle {
-  width: 100%;
-  font-size: 0;
-}
-.Left {
-  height: 625px;
-  width: 120px;
-  background-color: #03A66A;
-  display: inline-block;
-}
-.Middle {
-  height: 625px;
-  width: 630px;
-  background-color: #bbbf90;
-  display: inline-block;
-}
-.Right {
-  height: 625px;
-  width: 210px;
-  background-color: #03A66A;
-  display: inline-block;
-}
+
 .Footer {
   height: 200px;
   width: 100%;
   background-color: #025059;
+}
+
+
+.WrapMiddle {
+  width: 100%;
+  font-size: 0;
+  display: flex;
+}
+.Left {
+  height: 625px;
+  width: 12.5%;
+  background-color: #03A66A;
+  display: flex;
+  flex: 1 1 120px;
+}
+.Middle {
+  height: 625px;
+  width: 62.5%;
+  background-color: #bbbf90;
+  display: flex;
+  flex: 5 1 600px;
+}
+.Right {
+  height: 625px;
+  width: 25%;
+  background-color: #03A66A;
+  display: flex;
+  flex: 2 1 240px;
 }

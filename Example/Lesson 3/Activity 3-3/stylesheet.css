@@ -42,4 +42,11 @@ body {
   height: 200px;
   width: 100%;
   background-color: #025059;
+
+}
+
+.centered{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
