@@ -1,3 +1,4 @@
+
 body {
 	padding: 1rem .5rem;
 	font-size: 1.3rem;
@@ -11,10 +12,14 @@ body {
 
 @media screen and (min-width:60em) {
 	body{
-		background-image: url("../images/background_side_left.jpg");
-		background-position: left;
-		background-repeat: repeat-y;
-		background-color: #700015;
+		/*https://leaverou.github.io/css3patterns/#argyle*/
+		background-color: #6d695c;
+		background-image:
+		repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+		repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+		linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+		linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+		background-size: 70px 120px;
   }
 }
 
@@ -24,10 +29,14 @@ body {
   }
 }
 
+header{
+	background-color: rgba(255,255,255,20%);
+	border-radius: 00px 10px 10px 0px;
+}
+
 @media screen and (min-width:50em) {
   header{
     display: table;
-		background-color: #700015;
 		width:100%;
   }
 }
@@ -37,9 +46,10 @@ body {
 	header{
     display: flex;
 		flex-wrap:wrap;
-		background-color: #700015;
 		width:100%;
+		min-width: 50%;
   }
+
 }
 
 
@@ -68,7 +78,15 @@ body {
 		height:30vh;
 		margin:2vh;
 		display: auto;
+
+		border-radius: 25px;
   }
+	.LogoWrapper:hover{
+		transform: scale(1.3);
+		border-radius: 0px;
+		background-clip: border-box;
+		background-size: cover;
+	}
 }
 
 
@@ -90,7 +108,8 @@ main
 {
   display: relative;
   clear:both;
-  background-color: #9aabcd;
+  background-color: rgba(154,171, 205, 25%);
+	border-radius: 0px 0px 10px 10px;
 }
 
 @media screen and (min-width:60em) {
@@ -114,9 +133,11 @@ img {
 section
 {
   	display: table;
-    background-color: #abcdef;
+    background-color: #dbdde3;
     margin: 10px;
 		width:95%;
+		border-radius: 10px;
+		filter:drop-shadow(4px 4px 6px #333);
 }
 
 @media screen and (min-width:60em) {
@@ -124,15 +145,23 @@ section
 	{
 	  	display: flex;
 			flex-wrap:wrap;
-	    background-color: #abcdef;
-	    margin: 10px;
 			max-width:100%;
 			justify-content: center;
-
+			z-index: 1;
 	}
 	section>*
 	{
 		flex:1 1 25vw;
+	}
+	section>.Entry:hover
+	{
+		transform: scale(1.05) rotateX(180deg);
+		border-radius: 20px;
+		background-color: white;
+		z-index: 2;
+		max-width: 100%;
+		filter: drop-shadow(10px 10px 10px #000);
+
 	}
 }
 
@@ -141,7 +170,6 @@ section
 {
   display: table-cell;
   font-size: 1.3rem;
-  font-weight: bold;
   margin-top: 10px;
 	text-align: justify;
 	padding: 10px;
@@ -152,7 +180,6 @@ section
 	{
 	  display: auto;
 	  font-size: 1.3rem;
-	  font-weight: bold;
 	  margin-top: 10px;
 	}
 }
@@ -162,8 +189,9 @@ section
   display: table-cell;
 	width:15rem;
   font-size: .99rem;
-  font-style:oblique;
 	text-align: right;
+	font-family:'Open Sans', sans-serif;
+
 }
 
 @media screen and (min-width:60em) {
@@ -186,6 +214,9 @@ section
 	text-align: justify;
 	padding-bottom: 10px;
 	margin: 10px;
+	font-family:'Open Sans', sans-serif;
+
+	text-shadow: 1px 1px #fff;
 }
 
 @media screen and (min-width:60em) {
@@ -199,9 +230,12 @@ section
 {
 	display: list-item;
 	margin-top: 2em;
-	background-color: #bcdefa;
+	background: linear-gradient( to right, #dbdde3 2%,
+			rgba(255, 255, 255, 0.7) 10%, rgba(255, 255, 255, 0.7) 90%,	#dbdde3 98%);
+	color: black;
 	font-size:1.8rem;
-	font-weight: bolder;
+	font-family:'Raleway', sans-serif;
+
 }
 
 @media screen and (min-width:60em) {
@@ -210,6 +244,7 @@ section
 	  display:auto;
 		flex-basis: 100%;
 		text-align: center;
+		color:#10103F;
 	}
 }
 
