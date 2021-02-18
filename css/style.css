@@ -155,7 +155,7 @@ section
 	}
 	section>.Entry:hover
 	{
-		transform: scale(1.05) rotateX(180deg);
+
 		border-radius: 20px;
 		background-color: white;
 		z-index: 2;
