@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Example</title>
+
+  </head>
+  <body>
+    <form name="User Input Form" action="submission.php" method="post">
+      <fieldset>
+        <legend>Sign up for our newsletter!</legend>
+      <label for="user_name">Full Name</label>
+      <input type="text" name="user_name" id="user_name"/>
+      <button type="button" onClick="verifyName();">Check your user name</button>
+      <output name="buttonresult" for="button"></output>
+      <label for="emailaddress">Email address</label>
+      <input type="email" name="emailaddress" id="emailaddress" />
+      <fieldset>
+        <legend>Frequency of Emails</legend>
+        <label for="daily">Daily</label>
+        <input type="radio" name="frequency" id="daily" value="Daily">
+        <label for="weekly">Weekly</label>
+        <input type="radio" name="frequency" id="weekly" value="Weekly">
+        <label for="byminute">Until you scream</label>
+        <input type="radio" name="frequency" id="byminute" value="byminute">
+      </fieldset>
+      <fieldset>
+        <legend>Please let us know what you think about our website!</legend>
+        <textarea name="commentsection" rows="8" cols="80"></textarea>
+        <label for="foundus">How did you find us?</label>
+        <input list="FoundUsOptions" />
+        <datalist id="FoundUsOptions">
+          <option value="Online" />
+          <option value="Word of mouth" />
+          <option value="I stalked you." />
+        </datalist>
+        <label for="EmailType">Type of email</label>
+        <select name="EmailType">
+           <option value="HTML">HTML Format</option>
+           <option value="TEXT">Plain Text</option>
+         </select>
+        </select>
+      </fieldset>
+      <label for="termsofuse">I have read and accepted our terms <a href="here.html">Click here</a></label>
+      <input type="checkbox" name="termsofuse" required>
+      <button type="submit">Sign me up!</button>
+    </form>
+  </body>
+</html>

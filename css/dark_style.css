@@ -1,3 +1,8 @@
 :root{
-  --headlinecolor: red;
+  --LightShades:#F2EFEF;
+  --LightAccent:#508CBB;
+  --MainColor:#D66F4C;
+  --DarkAccent:#446D83;
+  --DarkShades:#282638;
+  --flowdirection:row;
 }

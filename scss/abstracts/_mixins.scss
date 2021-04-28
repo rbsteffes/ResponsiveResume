@@ -1,0 +1,12 @@
+// Applies vender prefixes to various shadow types if necessary
+// Ryan Steffes
+// 3-06-2021
+@mixin shadow($type, $var) {
+  @if($type == "drop" or $type =="box"){
+    -moz-#{$type}-shadow:$var;
+    -webkit-#{$type}-shadow:$var;
+  }
+
+  #{$type}-shadow: $var;
+
+}

@@ -1,0 +1,237 @@
+@import 'abstracts/defines';
+@import 'abstracts/mixins';
+@import 'base/typography';
+@import 'layout/blocks';
+@import 'layout/header';
+
+//Body rules for entire page
+body{
+  //Rules about body layout
+  margin: 0;
+  padding: 1px;
+  color:$dark-shades-color;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .column-right,
+  .column-left {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.column-right > h2{
+  font-family: "Helvetica", sans-serif;
+  font-weight: 100;
+  font-size: 1.20em;
+  color:darkblue;
+  line-height: 80%;
+}
+
+.column-right > h3{
+  font-family: "Helvetica", sans-serif;
+  font-weight: 100;
+  font-size: 1.10em;
+  color:var(--BrandColor);
+  line-height: 80%;
+}
+
+.column-right {
+
+    flex: 0 1 50%;
+    margin-left: 10px;
+}
+
+.column-left {
+  flex:0 0 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.Section-Image-Header{
+  position: absolute;
+  top:-90px;
+  left:-10px;
+  border-radius: 5%;
+  -webkit-box-shadow: 2px 3px 5px  var(--TextColor);
+	   -moz-box-shadow: 2px 3px 5px  var(--TextColor);
+	        box-shadow: 2px 3px 5px  var(--TextColor);
+}
+
+img ~ * {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.row{
+  justify-content: center;
+  padding:10px;
+  width:100%;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  ul{
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    li{
+      flex: auto auto 70px;
+      margin: 10px;
+    }
+  }
+}
+.OutLinks {
+list-style: none none;
+background-color:var(--AccentColor);
+color: var(--BackgroundColor);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+width:100%;
+}
+
+
+.OutLinks >li{
+  padding:10px;
+  border: 1px;
+  justify-content: center;
+}
+
+.mask{
+  height:100px;
+  width:650px;
+  margin-left: 30%;
+  object-fit: cover;
+
+  -webkit-clip-path: url(#svgPath);
+  clip-path: url(#svgPath);
+}
+
+.clip_poly{
+  clip-path: ellipse(50% 28% at 50% 50%);
+
+}
+
+
+
+
+.footer-icon
+{
+  width:50px;
+  height:50px;
+  fill: $main-color;
+}
+.main{
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-size: 1.12rem;
+	background-color: #FAF9F8;
+  margin: 50px;
+	padding:10px;
+
+  .article-section{
+    text-indent: 20px;
+    padding:15px;
+    margin: 10px;
+    width:90%;
+    background-color: rgba($dark-accent-color, .1);
+    color:$dark-shades-color;
+
+    column-count: 3;
+  	column-gap: 4em;
+  	line-height: 2rem;
+    column-rule: 1px solid $dark-accent-color;
+
+  }
+  h1{
+    text-align: center;
+    color:$light-accent-color;
+    @include shadow(text, 1px 2px 2px $dark-shades-color) ;
+  }
+
+  h2{
+    color: $dark-accent-color;
+    font-style: italic;
+    font-weight: lighter;
+    @include shadow(text, 1px 2px 2px $dark-shades-color) ;
+  }
+
+  h3{
+    color: $main-color;
+    font-style: oblique;
+    border-bottom: 1px solid $main-color;
+  }
+
+  .link-citation{
+   color: $main-color;
+   text-decoration: underline;
+   text-decoration-style: dotted;
+   text-decoration-thickness: 1px;
+  }
+
+  ol li{
+  	margin-bottom:15px;
+  	line-height: 1.15rem;
+  	padding-left:20px;
+  	padding-right:20px;
+  }
+
+  .GreenSection{
+    display: flex;
+    flex: 1 0 250px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--AccentColorTwo);
+    color:var(--BackgroundColor);
+    border-radius: 15px 0 0 15px;
+    margin-top: 90px;
+    padding-top: 25px;
+
+    -webkit-box-shadow: 2px 3px 5px  var(--TextColor);
+  	   -moz-box-shadow: 2px 3px 5px  var(--TextColor);
+  	        box-shadow: 2px 3px 5px  var(--TextColor);
+  }
+}
+
+.topnav{
+  ul{
+    margin-top:0;
+    justify-content: center;
+  }
+
+
+  &__link{
+    height:28px;
+    width:225px;
+    display: inline-block;
+    position: relative;
+    background-color: rgba($dark-accent-color, 0.6);
+    color:$light-shades-color;
+    text-align: center;
+    padding:2px;
+    margin-left:2px;
+
+    a{
+      text-decoration: none;
+      color: $light-shades-color;
+    }
+
+    &--currentpage {
+                background-color: $main-color;
+                color:$dark-accent-color;
+              }
+  }
+}

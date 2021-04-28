@@ -1,0 +1,49 @@
+.div--background-fixed-size{
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+.div--argyle-background{
+  //Rules about a background
+  /*https://leaverou.github.io/css3patterns/#argyle*/
+  /*Argyle Background*/
+  background-color: $light-accent-color;
+  background-image:
+  repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+  linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+  background-size: 70px 120px;
+}
+
+.div--flex-row{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.div-flex-row-wrap{
+  @extend .div--flex-row;
+  flex-wrap:wrap;
+}
+
+.div--flex-cols{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.div-flex-cols-wrap{
+  @extend .div--flex-cols;
+  flex-wrap:wrap;
+}
+
+.div--shadowed-brand-color{
+  @include shadow(box, 2px 3px 4px $main-color) ;
+}
+
+.div--rounded-bottoms{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

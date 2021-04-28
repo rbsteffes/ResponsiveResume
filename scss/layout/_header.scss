@@ -1,0 +1,60 @@
+//Header rules
+.header{
+  padding-left:15px;
+  padding-bottom: 10px;
+
+  // Banner size and image
+  height: $header-height;
+  width:$header-width;
+  color:$light-accent-color;
+  background-image: $header-background-image;
+  align-items: flex-end;
+  >*{
+    flex-grow: 0;
+  }
+
+  h1{
+    @include shadow("text", 0px 1px 2px $light-shades-color);
+  }
+
+   // Parts of the Table of Contents
+  &-toc {
+    border: 1px solid #9F5865;
+  	font-size: 1.25rem;
+  	border-radius: 10px;
+  	margin-left: 50px;
+  	margin-bottom:10px;
+
+    border:1px solid $dark-accent-color;
+    border-radius: 10px;
+    background-color: $main-color;
+    color: $dark-shades-color;
+    @include shadow(box, 2px 3px 4px $main-color);
+
+    a{
+    	color: #53B1CC;
+    	text-decoration: underline;
+    	text-decoration-style: dotted;
+      &:visted{
+      	color: #9F5865;
+      	text-decoration: none;
+      }
+    }
+
+    &-heading{
+    	color: $light-shades-color;
+    	text-align: center;
+    	border-bottom: 1px solid $dark-accent-color;
+    	padding-bottom: 10px;
+    }
+
+    &-body{
+    	background-color:$light-shades-color;
+      color:$light-accent-color;
+    	box-sizing: border-box;
+    	padding:10px;
+      list-style: none none;
+    }
+  }
+
+}
