@@ -1,0 +1,103 @@
+*{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+      }
+
+      .main_article{
+        position:relative;
+      }
+
+      .BlueBox, .RedBox, .GreenBox{
+
+        padding: 1px;
+      }
+
+      .BlueBox{
+        background-color:white;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+      }
+
+
+      .RedBox{
+        display:flex;
+        flex-direction:row;
+      }
+
+      .RedBox>img{
+        height:350px;
+        margin:10px;
+        fil
+      }
+
+      .ArticleText{
+        margin:10px;
+        display: flex;
+        flex-direction: column;
+        padding:20px;
+        color:rgb(47, 62, 70) ;
+        background-color: rgb(202, 210, 197);
+        justify-content: center;
+      }
+
+      .ArticleText a{
+        padding:20px;
+        color:rgb(202, 210, 197);
+        text-decoration: none;
+        font-size: .7rem;
+        border:1px solid rgb(47, 62, 70);
+        background-color: rgb(53, 79, 82);
+        box-shadow: 1px 1px 3px rgb(132, 169, 140);
+      }
+
+      .GreenBox{
+        height:250px;
+        background-image:url("../../images/K1__5716.jpg");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: rgba(82, 121, 111,0.5);
+        background-blend-mode: multiply;
+
+      }
+
+      header{
+        background-image:url("../../images/RyanSteffesPhotographer.jpg");
+        padding-bottom: 10px;
+        height: 300px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: rgba(47, 62, 70,0.4);
+        background-blend-mode: multiply;
+      }
+
+      .TopBar{
+        display: flex;
+        background-color: #CAD2C5;
+        padding:10px;
+      }
+
+      .TopBar .Logo{
+        flex:0 1 100px;
+
+      }
+
+      .TopBar nav{
+        flex: 1 0 auto;
+
+      }
+      .BreadCrumbs{
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+      }
+
+      .BreadCrumbs li{
+        flex-grow: 0;
+        padding:10px;
+      }

@@ -3,79 +3,27 @@
   <head>
     <meta name="description" content="Stuff">
     <meta charset="utf-8">
-    <meta name="viewport" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Example Page</title>
-    <style>
-      *{
-        margin:1px;
-      }
-
-      .main_article{
-        position:relative;
-      }
-
-      .BlueBox, .RedBox, .GreenBox{
-
-        padding: 1px;
-      }
-
-      .BlueBox{
-        background-color:white;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
-      }
-
-
-      .RedBox{
-        display:flex;
-        flex-direction:row;
-      }
-
-      .RedBox>img{
-        height:350px;
-        padding:20px;
-      }
-
-      .ArticleText{
-        padding:20px;
-        box-shadow: 2px 3px 4px #1A4888;
-      }
-
-      .GreenBox{
-        height:250px;
-        background-image:url("../../images/K1__5716.jpg");
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-      }
-
-      header{
-        background-image:url("../../images/RyanSteffesPhotographer.jpg");
-        padding-left: 15px;
-        padding-bottom: 10px;
-        height: 300px;
-        width: 100%;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-      }
-      nav{
-        background-color:grey;
-        float:right;
-      }
-    </style>
+    <link rel="stylesheet" href="example.css">
 
   </head>
 
   <body>
 
     <header>
-      <img src="">
-      <nav>
-        Navigation goes here.
-        </nav>
+      <div class="TopBar">
+        <div class="Logo">
+          <img src="Logo.jpg" alt="Ryan Steffes He's awesome!">
+        </div>
+        <nav>
+          <ul class="BreadCrumbs">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Chapter 2.html" target="_self">You are here</a></li>
+          </ul>
+          </nav>
+      </div>
     </header>
 
     <article class="main_article">
@@ -88,24 +36,24 @@
           <div class="ArticleText">
             <h1>This is stuff</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="aboutme.html">Click here for more</a>
+            <p><a href="aboutme.html">Click here for more</a></p>
           </div>
 
       </section>
-      <section class="GreenBox">Section 3</section>
+      <section class="GreenBox"></section>
       <section class="RedBox">
           <img src="../../images/559939187.jpg">
           <div class="ArticleText">
             <h1>This is stuff</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="aboutme.html">Click here for more</a>
+            <p><a href="aboutme.html">Click here for more</a></p>
           </div>
       </section>
       <section class="RedBox">
           <div class="ArticleText">
             <h1>This is stuff</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="aboutme.html">Click here for more</a>
+            <p><a href="aboutme.html">Click here for more</a></p>
           </div>
           <img src="../../images/559939187.jpg">
       </section>
@@ -126,6 +74,13 @@
           <img src="../../images/559939187.jpg">
       </section>
     </article>
+    <footer>
+      <p>Connect with me on LinkedIn</p>
+      <ul class="BreadCrumbs">
+        <li>Terms of Use</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </footer>
 
   </body>
 </html>
