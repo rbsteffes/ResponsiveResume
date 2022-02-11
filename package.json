@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/rbsteffes/ResponsiveResume#readme",
   "devDependencies": {
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "nodemon": "^2.0.7"
   }
 }
